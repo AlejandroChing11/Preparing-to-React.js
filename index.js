@@ -21,3 +21,13 @@ function Sum(a, b) {
 };
 
 Sum(2, 4);
+
+//Default Parameters:
+function Mins(x, z = 0) {
+    // if (z === undefined) {
+    //     z = 0;
+    // }
+    return x - z;
+};
+
+console.log(Mins(2, 20));
