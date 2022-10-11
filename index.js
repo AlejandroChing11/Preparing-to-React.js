@@ -107,12 +107,27 @@
 // }());
 
 
-const button = document.createElement('button');
-button.innerText = 'click me';
-button.addEventListener('click', function () {
-    alert('clicked');
-});
+// const button = document.createElement('button');
+// button.innerText = 'click me';
+// button.addEventListener('click', function () {
+//     alert('clicked');
+// });
 
-document.body.append(button);
+// document.body.append(button);
+
+//Arrow functions <3 
+// const sum  = (x, y) => {
+//     return x + y
+// };
+
+// const button = document.createElement('button');
+// button.innerText = 'click me';
+// button.addEventListener('click', () => {
+//     alert('clicked');
+// });
+
+//Inline Arrow Functions.
+
+
 
 
