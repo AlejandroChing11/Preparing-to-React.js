@@ -150,8 +150,31 @@
 
 //Review with Return.
 
+// const button = document.createElement('button');
+// button.innerText = 'click me';
+
+// const isAuthorized = true;
+
+// button.addEventListener('click', () => {
+//     if (isAuthorized) {
+//        return alert('Esta autorizado'); //Return lo que hace es acabar con la ejecucion de la funcion.
+//     };
+
+//     alert("no esta autorizado"); 
+
+// });
+
+// document.body.append(button)
+
+//String Literals.
+
+const background = 'green';
+const color = 'white';
+
+
 const button = document.createElement('button');
 button.innerText = 'click me';
+button.style = `background: ${background}; color: ${color}`;
 
 const isAuthorized = true;
 
@@ -165,6 +188,7 @@ button.addEventListener('click', () => {
 });
 
 document.body.append(button)
+
 
 
 
