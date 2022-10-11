@@ -135,9 +135,36 @@
 
 //Inline Way to Use Arrow Functions.
 
-const showText = () => 'Hola Mundo';
+// const showText = () => 'Hola Mundo';
 
-console.log(showText());
+// console.log(showText())
+
+//For Objects
+// const showObject = () => ({
+//     name: 'Alejandro',
+//     apellido: 'Ching',
+//     ciudad: 'Barranquilla'
+// });
+
+// console.log(showObject());
+
+//Review with Return.
+
+const button = document.createElement('button');
+button.innerText = 'click me';
+
+const isAuthorized = true;
+
+button.addEventListener('click', () => {
+    if (isAuthorized) {
+       return alert('Esta autorizado'); //Return lo que hace es acabar con la ejecucion de la funcion.
+    };
+
+    alert("no esta autorizado"); 
+
+});
+
+document.body.append(button)
 
 
 
