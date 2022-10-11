@@ -80,15 +80,39 @@
 // document.body.append(title);
 
 //Objects as an array.
-const user = {
-    name: 'Alejandro',
-    age: 18
-};
+// const user = {
+//     name: 'Alejandro',
+//     age: 18
+// };
 
-function printInfo(user) {
-    return '<h1> Hola ' + user.name + ' </h1>'
-}
+// function printInfo(user) {
+//     const { name, age } = user
 
-console.log(printInfo(user));
+//     console.log(name, age);
 
-document.body.innerHTML = printInfo(user);
+//     return '<h1> Hola ' + name + ' </h1>'
+// }
+
+// console.log(printInfo(user));
+
+// document.body.innerHTML = printInfo(user);
+
+//Funciones Anonimas.
+// function start() {
+//     return 'starting ...';
+// }
+
+// console.log(function () {
+//     return 'Starting...';
+// }());
+
+
+const button = document.createElement('button');
+button.innerText = 'click me';
+button.addEventListener('click', function () {
+    alert('clicked');
+});
+
+document.body.append(button);
+
+
