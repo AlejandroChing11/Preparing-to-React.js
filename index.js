@@ -127,6 +127,17 @@
 // });
 
 //Inline Arrow Functions.
+// const showText = () => {
+//     return 'Hola mundo';
+// };
+
+// console.log(showText());
+
+//Inline Way to Use Arrow Functions.
+
+const showText = () => 'Hola Mundo';
+
+console.log(showText());
 
 
 
