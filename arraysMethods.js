@@ -45,20 +45,23 @@ const newNames = ['Alejo', 'cami', 'Sandra'];
 //Spreed operator to concat arrays.
 // console.log([...newNames, ...names]);
 
-const user = {
-    name: "Ryan",
-    lastname: "castro",
-};
+// const user = {
+//     name: "Ryan",
+//     lastname: "castro",
+// };
 
-const address = {
-    street: 'Main Street',
-    city: 'Barranquilla'
-};
+// const address = {
+//     street: 'Main Street',
+//     city: 'Barranquilla'
+// };
 
 
-const UserInfo = {
-    ...user,
-    ...address,
-};
+// const UserInfo = {
+//     ...user,
+//     ...address,
+// };
 
-console.log(UserInfo);
+// console.log(UserInfo);
+
+
+

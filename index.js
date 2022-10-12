@@ -168,26 +168,36 @@
 
 //String Literals.
 
-const background = 'green';
-const color = 'white';
+// const background = 'green';
+// const color = 'white';
 
 
-const button = document.createElement('button');
-button.innerText = 'click me';
-button.style = `background: ${background}; color: ${color}`;
+// const button = document.createElement('button');
+// button.innerText = 'click me';
+// button.style = `background: ${background}; color: ${color}`;
 
-const isAuthorized = true;
+// const isAuthorized = true;
 
-button.addEventListener('click', () => {
-    if (isAuthorized) {
-       return alert('Esta autorizado'); //Return lo que hace es acabar con la ejecucion de la funcion.
-    };
+// button.addEventListener('click', () => {
+//     if (isAuthorized) {
+//        return alert('Esta autorizado'); //Return lo que hace es acabar con la ejecucion de la funcion.
+//     };
 
-    alert("no esta autorizado"); 
+//     alert("no esta autorizado"); 
 
-});
+// });
 
-document.body.append(button)
+// document.body.append(button)
+
+//NOW WE ARE GOING TO REVIEW ECMASCRIPT MODULES AND IMPORTING FUNCTIONS FROM OTHER MODULES.
+import {sum} from './add.js';
+import {multiply} from './add.js';
+
+console.log(sum(20, 10));
+console.log(multiply(20, 20));
+
+
+
 
 
 
