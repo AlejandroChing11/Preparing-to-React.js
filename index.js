@@ -190,11 +190,11 @@
 // document.body.append(button)
 
 //NOW WE ARE GOING TO REVIEW ECMASCRIPT MODULES AND IMPORTING FUNCTIONS FROM OTHER MODULES.
-import {sum} from './add.js';
-import {multiply} from './add.js';
-
+import {sum, multiply, title } from './add.js';
 console.log(sum(20, 10));
 console.log(multiply(20, 20));
+console.log(title);
+
 
 
 
