@@ -39,5 +39,26 @@ const newNames = ['Alejo', 'cami', 'Sandra'];
 
 //Now using concat to concat 2 different arrays.
 
-const exp = names.concat(newNames);
-console.log(exp);
+// const exp = names.concat(newNames);
+// console.log(exp);
+
+//Spreed operator to concat arrays.
+// console.log([...newNames, ...names]);
+
+const user = {
+    name: "Ryan",
+    lastname: "castro",
+};
+
+const address = {
+    street: 'Main Street',
+    city: 'Barranquilla'
+};
+
+
+const UserInfo = {
+    ...user,
+    ...address,
+};
+
+console.log(UserInfo);
