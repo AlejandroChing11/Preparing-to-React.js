@@ -190,11 +190,21 @@
 // document.body.append(button)
 
 //NOW WE ARE GOING TO REVIEW ECMASCRIPT MODULES AND IMPORTING FUNCTIONS FROM OTHER MODULES.
-import {sum, multiply, title } from './add.js';
-console.log(sum(20, 10));
-console.log(multiply(20, 20));
-console.log(title);
+// import {sum, multiply, title } from './add.js';
+// console.log(sum(20, 10));
+// console.log(multiply(20, 20));
+// console.log(title);
 
+//Now we are going to study optional chaining.
+const person = {
+    name: 'Ryan',
+    address: {
+        city: 'quilla'
+    },
+    location: {}
+};
+
+console.log(person.location?.city);
 
 
 
