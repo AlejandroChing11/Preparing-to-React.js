@@ -196,15 +196,47 @@
 // console.log(title);
 
 //Now we are going to study optional chaining.
-const person = {
-    name: 'Ryan',
-    address: {
-        city: 'quilla'
-    },
-    location: {}
-};
+// const person = {
+//     name: 'Ryan',
+//     address: {
+//         city: 'quilla'
+//     },
+//     location: {}
+// };
 
-console.log(person.location?.city);
+// console.log(person.location?.city);
+
+//Now we are going to review Async and Await.
+const ul = document.createElement('ul');
+
+
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(function (reponse) {
+//         return reponse.json()
+//     }).then(function (data){
+//         console.log(data)
+//         data.forEach(function (post) {
+//             const li = document.createElement('li');
+//             li.innerText = post.title
+//             ul.appendChild(li);
+//         });
+//         document.body.append(ul);
+//     })
+
+
+async function loadData() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await response.json();
+    console.log(data);
+    data.forEach(function (post) {
+        const li = document.createElement('li');
+        li.innerText = post.title
+        ul.appendChild(li);
+    });
+    document.body.append(ul);
+}
+
+loadData();
 
 
 
